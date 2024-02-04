@@ -1,0 +1,11 @@
+folder_path = ''#输入文件的路径,文件层级用\\表示,示例：'C:\\Users\\CuiMuxuan\\Pictures\\snipaste'
+save_path = ''#输出文件的路径,文件层级用\\表示,示例：'C:\\Users\\CuiMuxuan\\Pictures\\snipaste'
+mosaic_neighbor = 10#马赛克的大小
+haar_path='./haarcascade_frontalface_default.xml'#haar的配置文件路径
+net_txt="deploy.prototxt"#net的配置文件
+net_path="res10_300x300_ssd_iter_140000_fp16.caffemodel"#net的前置文件
+method = "net"#选择使用haar级联或者net模型 eunm:"haar" or "net"
+batch_detect=False#是否批量检测人脸 eunm:True or False
+batch_mosaic=False#是否批量人脸打码 eunm:True or False
+batch_video=False#是否对视频进行人脸打码 eunm:True or False
+video_path=""#视频的路径
